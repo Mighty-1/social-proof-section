@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 20;
+  font-family: "Inter", "Lato", Arial;
+}
+body {
+  background-image: url(./../photos/bg-pattern-bottom-desktop.svg);
+  display: grid;
+  max-width: auto;
+  height: 100vh;
+  grid-template-areas:
+    "header header header"
+    "content1 content content2"
+    "footer footer footer";
+
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 5% 90% 5%;
+  grid-template-rows: 10% 80% 10%;
+}
+header,
+aside,
+main,
+section,
+footer {
+  padding: 20px;
+  /* border: 1px solid black; */
+}
+header {
+  grid-area: header;
+}
+aside {
+  grid-area: content1;
+}
+main {
+  grid-area: content2;
+}
+section {
+  grid-area: content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  grid-area: footer;
+}
+.grand-mother-div {
+  background-image: url(./../photos/bg-pattern-top-desktop.svg);
+  box-shadow: 15px 15px 15px 15px lightgrey;
+  height: 90vh;
+  width: 140vh;
+}
+.mother-div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 100px 35px 100px;
+}
+.daughter-div1 {
+  /* background-color: blue; */
+  height: auto;
+  width: 50%;
+}
+.daughter-div2 {
+  /* background-color: grey; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+  margin-top: 3%;
+  padding: 10px 20px 20px 10px;
+}
+/* son1 to daughter-div2 */
+.daughter-div2-son1 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  background-color: #f7f2f8;
+  padding: 2px 20px 2px 20px;
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-right: 20%;
+}
+/* son2 to daughter-div2 */
+.daughter-div2-son2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  gap: 13px;
+  background-color: #f7f2f8;
+  padding: 2px 20px 2px 20px;
+  border-radius: 5px;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+/* son3 to daughter-div2 */
+.daughter-div2-son3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 13px;
+  background-color: #f7f2f8;
+  padding: 2px 20px 2px 20px;
+  border-radius: 5px;
+  margin-left: 30%;
+}
+.star-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.mother-div2 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 100px 50px 100px;
+}
+.customer-1 {
+  background-color: #511f50;
+  width: 85%;
+  height: 24vh;
+  border-radius: 7px;
+}
+.customer-2 {
+  background-color: #511f50;
+  width: 85%;
+  height: 24vh;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+.customer-3 {
+  background-color: #511f50;
+  width: 85%;
+  height: 24vh;
+  border-radius: 7px;
+  margin-top: 40px;
+}
+.colton-div1 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: 25px 0px 10px 20px;
+  /* align-items: center; */
+}
